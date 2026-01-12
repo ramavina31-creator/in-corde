@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reseñas | In Corde</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="header-content">
+        <h1>In Corde</h1>
+        <nav class="main-nav">
+            <a href="index.html">Inicio</a>
+            <a href="libros.html">Libros</a>
+            <a href="resenas.html" class="active">Reseñas</a>
+            <a href="prestamos.html">Préstamos</a>
+        </nav>
+    </div>
+</header>
+
+<!-- CONTENT -->
+<main class="main-content">
+
+    <h2>Reseñas</h2>
+
+    <!-- FORMULARIO -->
+    <section class="card">
+        <h3>Agregar reseña</h3>
+
+        <form onsubmit="return false;">
+            <select required>
+                <option value="">Selecciona un libro</option>
+                <option>1984</option>
+                <option>Cien años de soledad</option>
+                <option>Fahrenheit 451</option>
+            </select>
+
+            <select required>
+                <option value="">Calificación</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <textarea placeholder="Escribe tu reseña"></textarea>
+
+            <button class="btn btn-primary">
+                Guardar
+            </button>
+        </form>
+    </section>
+
+    <!-- TABLA -->
+    <section class="card">
+        <h3>Lista de reseñas</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Libro</th>
+                    <th>Calificación</th>
+                    <th>Comentario</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ramses</td>
+                    <td>1984</td>
+                    <td>5</td>
+                    <td>Una crítica impresionante al control totalitario.</td>
+                    <td>2025-03-10</td>
+                </tr>
+                <tr>
+                    <td>ana</td>
+                    <td>Cien años de soledad</td>
+                    <td>4</td>
+                    <td>Una obra compleja pero fascinante.</td>
+                    <td>2025-03-12</td>
+                </tr>
+                <tr>
+                    <td>luis</td>
+                    <td>Fahrenheit 451</td>
+                    <td>5</td>
+                    <td>Muy vigente para nuestra época.</td>
+                    <td>2025-03-15</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+    <p>&copy; 2025 In Corde</p>
+</footer>
+
+</body>
+</html>
